@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Northwind AI Consulting</title>
+    <meta name="description" content="Practical AI strategy, prototypes, and production systems for growing teams." />
+    <style>
+      :root {
+        --ink: #111217;
+        --muted: #5b6070;
+        --accent: #1f6feb;
+        --bg: #f6f7fb;
+        --card: #ffffff;
+        --border: #e4e7f0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+        color: var(--ink);
+        background: radial-gradient(circle at 10% 10%, #e9f0ff, transparent 45%),
+          radial-gradient(circle at 90% 0%, #fff2e7, transparent 35%), var(--bg);
+      }
+      header {
+        padding: 56px 20px 24px;
+        text-align: center;
+      }
+      header h1 {
+        font-size: clamp(32px, 5vw, 48px);
+        margin: 0 0 12px;
+        letter-spacing: -0.02em;
+      }
+      header p {
+        margin: 0 auto;
+        max-width: 640px;
+        font-size: 18px;
+        color: var(--muted);
+      }
+      .cta {
+        display: inline-flex;
+        gap: 12px;
+        margin-top: 24px;
+      }
+      .cta a {
+        text-decoration: none;
+        padding: 12px 18px;
+        border-radius: 10px;
+        font-weight: 600;
+      }
+      .cta .primary {
+        background: var(--accent);
+        color: #fff;
+      }
+      .cta .secondary {
+        border: 1px solid var(--border);
+        color: var(--ink);
+        background: var(--card);
+      }
+      main {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 16px 20px 56px;
+      }
+      .grid {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 18px;
+        box-shadow: 0 8px 24px rgba(18, 24, 44, 0.06);
+      }
+      .card h3 {
+        margin-top: 0;
+        margin-bottom: 8px;
+      }
+      .card p {
+        margin: 0;
+        color: var(--muted);
+      }
+      .band {
+        margin-top: 28px;
+        background: #111217;
+        color: #fff;
+        border-radius: 18px;
+        padding: 24px;
+        display: grid;
+        gap: 12px;
+      }
+      .band h2 {
+        margin: 0;
+      }
+      .band p {
+        margin: 0;
+        color: #cfd3e0;
+      }
+      footer {
+        text-align: center;
+        padding: 24px 12px 40px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Northwind AI Consulting</h1>
+      <p>
+        We help teams ship real AI: clear strategy, fast prototypes, and secure
+        production systems that move revenue.
+      </p>
+      <div class="cta">
+        <a class="primary" href="mailto:hello@northwind.ai">Schedule a call</a>
+        <a class="secondary" href="#services">View services</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="services" class="grid">
+        <div class="card">
+          <h3>AI Strategy</h3>
+          <p>Opportunity mapping, ROI modeling, and a 90-day execution roadmap.</p>
+        </div>
+        <div class="card">
+          <h3>Rapid Prototyping</h3>
+          <p>Proof-of-concept builds in 2-4 weeks to validate impact quickly.</p>
+        </div>
+        <div class="card">
+          <h3>Data & MLOps</h3>
+          <p>Reliable pipelines, evaluation, and monitoring to keep models honest.</p>
+        </div>
+        <div class="card">
+          <h3>AI Enablement</h3>
+          <p>Workshops and playbooks to upskill your team and scale responsibly.</p>
+        </div>
+      </section>
+
+      <section class="band">
+        <h2>From idea to production without the hype.</h2>
+        <p>
+          We specialize in practical AI for customer support, operations, sales,
+          and internal tools. Transparent delivery, measurable outcomes.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 Northwind AI Consulting · hello@northwind.ai
+    </footer>
+  </body>
+</html>
