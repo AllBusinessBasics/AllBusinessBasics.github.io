@@ -125,20 +125,15 @@ h1 {
   max-width: 35ch;
 }
 
-.service-card a {
+.service-card .learn-more {
   color: var(--blue-deep);
-  text-decoration: none;
   font-weight: 600;
   font-size: 0.94rem;
   align-self: flex-end;
   margin-top: auto;
 }
 
-.service-card a:hover {
-  color: var(--blue);
-}
-
-.service-card a::after {
+.service-card .learn-more::after {
   content: "↗";
   display: inline-block;
   margin-left: 0.35rem;
