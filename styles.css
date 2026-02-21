@@ -173,6 +173,26 @@ h1 {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.rate-banner {
+  margin: 0;
+  width: min(980px, 92vw);
+  min-height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: #e7f0f8;
+  border-top: 1px solid #bfd3e5;
+  border-bottom: 1px solid #bfd3e5;
+  border-left: 0;
+  border-right: 0;
+  color: #163b5b;
+  font-size: clamp(1rem, 1.15vw, 1.15rem);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
 .reach-out:hover {
   transform: translateY(-1px);
   box-shadow: 0 18px 32px rgba(20, 66, 99, 0.28);
@@ -206,6 +226,10 @@ h1 {
 
   .reach-out {
     min-width: 0;
+    width: 100%;
+  }
+
+  .rate-banner {
     width: 100%;
   }
 
