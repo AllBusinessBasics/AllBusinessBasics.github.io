@@ -276,6 +276,21 @@ h1 {
   align-self: flex-end;
 }
 
+.training-footer {
+  width: 100%;
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.training-footer .legal-mark {
+  width: 100%;
+  margin: 0;
+  text-align: right;
+}
+
 .training-sections {
   width: 100%;
   display: grid;
@@ -358,5 +373,9 @@ h1 {
   .legal-mark {
     align-self: flex-start;
     margin-top: 10px;
+  }
+
+  .training-footer .legal-mark {
+    text-align: left;
   }
 }
