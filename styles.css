@@ -259,6 +259,10 @@ h1 {
   margin-bottom: 0;
 }
 
+.paren-regular {
+  font-weight: 400;
+}
+
 .delivery-title {
   margin: 16px 0 10px;
   color: #163552;
