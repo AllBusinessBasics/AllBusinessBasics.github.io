@@ -65,6 +65,25 @@ body {
   text-align: center;
 }
 
+.page-wrap:not(.training-page) .hero {
+  grid-template-rows: auto auto auto auto auto;
+  align-content: start;
+  gap: clamp(16px, 2.2vh, 26px);
+}
+
+.page-wrap:not(.training-page) {
+  padding: clamp(22px, 2.8vh, 34px) clamp(26px, 4vw, 56px) clamp(30px, 3.8vh, 44px);
+}
+
+.page-wrap:not(.training-page) .services {
+  gap: clamp(20px, 2.2vw, 34px);
+}
+
+.page-wrap:not(.training-page) .hero .legal-mark {
+  justify-self: end;
+  margin-top: 4px;
+}
+
 .kicker {
   margin: 0;
   color: var(--blue-deep);
@@ -293,6 +312,7 @@ h1 {
   width: 100%;
   margin: 0;
   text-align: right;
+  font-size: 0.76rem;
 }
 
 .training-sections {
@@ -347,6 +367,16 @@ h1 {
 .training-panel li {
   margin: 0 0 8px;
   line-height: 1.4;
+}
+
+.strategy-discuss-title {
+  text-align: center;
+}
+
+.strategy-discuss-list {
+  margin-left: 0;
+  text-align: center;
+  list-style-position: inside;
 }
 
 @media (max-width: 1024px) {
