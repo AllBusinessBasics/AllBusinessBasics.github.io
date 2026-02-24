@@ -14,7 +14,7 @@
   <div class="page-wrap training-page">
     <header class="top-bar" aria-label="Site branding">
       <a class="logo-link" href="index.html" aria-label="Back to home page">
-        <img class="logo" src="assets/images/abb-logo-transparent.png" alt="All Business Basics logo">
+        <img class="logo" src="Images/ABB Logo Transparent.png" alt="All Business Basics logo">
       </a>
     </header>
 
@@ -108,50 +108,6 @@
       </section>
     </main>
   </div>
-  <script>
-    (() => {
-      const endpoint =
-        window.ABB_ANALYTICS_ENDPOINT || "https://analytics.allbusinessbasics.com/collect";
-
-      const sendEvent = (eventType, metadata = {}) => {
-        const payload = {
-          eventType,
-          path: window.location.pathname || "/",
-          title: document.title,
-          referrer: document.referrer || "",
-          metadata,
-        };
-        const body = JSON.stringify(payload);
-
-        if (navigator.sendBeacon) {
-          try {
-            const blob = new Blob([body], { type: "application/json" });
-            navigator.sendBeacon(endpoint, blob);
-            return;
-          } catch (error) {}
-        }
-
-        fetch(endpoint, {
-          method: "POST",
-          mode: "cors",
-          keepalive: true,
-          headers: { "Content-Type": "application/json" },
-          body,
-        }).catch(() => {});
-      };
-
-      sendEvent("page_view");
-
-      document.addEventListener("click", (event) => {
-        const link = event.target.closest("a[href]");
-        if (!link) return;
-        const href = link.getAttribute("href") || "";
-        if (href.startsWith("mailto:")) {
-          sendEvent("cta_click", { href });
-        }
-      });
-    })();
-  </script>
 </body>
 </html>
 
